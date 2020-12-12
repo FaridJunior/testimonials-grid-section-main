@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  /* Primary */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  /* Neutral */
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+div {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--light-grayish-blue);
+}
+.testimonails > .container {
+  max-width: 80%;
+  margin: 11.5rem auto;
+}
+.testimonails_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+.testimonail_wrapper {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: var(--light-grayish-blue);
+  box-shadow: 10px 20px 16px hsl(217, 19%, 35%, 0.15);
+}
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(1),
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(4) {
+  grid-column: span 2;
+}
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(5) {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(1) {
+  background: url(images/bg-pattern-quotation.svg) no-repeat 80% 0px,
+    var(--moderate-violet);
+}
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(2) {
+  background: var(--very-dark-grayish-blue);
+}
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(3),
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(5) {
+  background: var(--white);
+  color: var(--very-dark-grayish-blue);
+}
+.testimonails_wrapper > .testimonail_wrapper:nth-of-type(4) {
+  background: var(--very-dark-blackish-blue);
+}
+.user_wrapper {
+  display: grid;
+  grid-template-columns: 50px auto;
+  font-size: 0.8rem;
+  margin-bottom: 0.3em;
+}
+.user_name {
+  margin: 0px 0px 0.1rem;
+}
+.user_wrapper .status {
+  opacity: 50%;
+}
+.profile_pic {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.testimonial__header {
+  margin-bottom: 1.4em;
+  font-size: 1.3rem;
+}
+.testimonail_wrapper q {
+  opacity: 70%;
+  font-size: 0.8rem;
+  line-height: 1.2em;
+}
+@media (max-width: 1000px) {
+  .testimonails_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonail_wrapper {
+    grid-column: 1/-1 !important;
+    grid-row: auto !important;
+  }
+}
