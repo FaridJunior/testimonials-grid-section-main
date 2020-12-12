@@ -73,10 +73,10 @@ body {
   margin: 0px 0px 0.1rem;
 }
 .user_wrapper .status {
-  opacity: 50%;
+  opacity: 0.5;
 }
 .profile_pic {
-  border-radius: 0.5;
+  border-radius: 50%;
   width: 36px;
   height: 36px;
 }
