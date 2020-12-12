@@ -1,7 +1,7 @@
 export const testimonailsData = [
   {
     userName: "Daniel Clifford",
-    state: " Verified Graduate",
+    status: " Verified Graduate",
     imgurl: "./images/image-daniel.jpg",
     testMionailHeader:
       "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feelI got every penny’s worth.",
@@ -15,7 +15,7 @@ export const testimonailsData = [
   },
   {
     userName: "Jonathan Walters",
-    state: "Verified Graduate",
+    status: "Verified Graduate",
     imgurl: "./images/image-jonathan.jpg",
     testMionailHeader: " The team was very supportive and kept me motivated",
     subtitles: `I started as a total newbie with virtually no coding skills. I now
@@ -24,7 +24,7 @@ export const testimonailsData = [
   },
   {
     userName: "Jeanette Harmon",
-    state: "Verified Graduate",
+    status: "Verified Graduate",
     imgurl: "./images/image-jeanette.jpg",
     testMionailHeader: "An overall wonderful and rewarding experience",
     subtitles: `Thank you for the wonderful experience! I now have a job I really
@@ -32,7 +32,7 @@ export const testimonailsData = [
   },
   {
     userName: "Patrick Abrams",
-    state: "Verified Graduate",
+    status: "Verified Graduate",
     imgurl: "./images/image-patrick.jpg",
     testMionailHeader: `Awesome teaching support from TAs who did the bootcamp themselves.
     Getting guidance from them and learning from their experiences was
@@ -46,7 +46,7 @@ export const testimonailsData = [
   },
   {
     userName: "Kira Whittle",
-    state: "Verified Graduate",
+    status: "Verified Graduate",
     imgurl: "/images/image-kira.jpg",
     testMionailHeader: "Such a life-changing experience. Highly recommended!",
     subtitles: `
